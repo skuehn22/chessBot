@@ -1,18 +1,12 @@
 import './bootstrap';
 import { createApp } from 'vue';
+import Homepage from './components/Homepage.vue';
 
 const app = createApp({
-    data() {
-        return {
-            gameStarted: false
-        }
+    components: {
+        Homepage
     },
-    methods: {
-        startGame() {
-            this.gameStarted = true;
-            alert('Game started! This is Vue.js 3 working with Laravel and Bootstrap.');
-        }
-    }
+    template: '<Homepage />'
 });
 
 app.mount('#app');

@@ -17,11 +17,18 @@ export default defineConfig({
             },
         }),
     ],
+    server: {
+        host: true,
+        hmr: {
+            host: 'localhost',
+        },
+    },
     define: {
         global: 'globalThis',
     },
     resolve: {
         alias: {
+            vue: 'vue/dist/vue.esm-bundler.js',
             crypto: 'crypto-browserify',
         },
     },

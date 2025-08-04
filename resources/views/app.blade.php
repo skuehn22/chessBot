@@ -3,26 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chess Game</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>ChessBot - Master Chess with AI</title>
+    <meta name="description" content="Challenge yourself against our advanced chess bot. Improve your skills, learn new strategies, and enjoy the timeless game of chess.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♛</text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <div id="app">
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card">
-                        <div class="card-header">
-                            <h1 class="mb-0">Chess Game</h1>
-                        </div>
-                        <div class="card-body">
-                            <p>Welcome to the Chess Game! This is a Laravel + Vue.js 3 + Bootstrap setup.</p>
-                            <button class="btn btn-primary" @click="startGame">Start Game</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="app"></div>
 </body>
 </html>
